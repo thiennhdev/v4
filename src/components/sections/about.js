@@ -172,6 +172,17 @@ const About = () => {
               award from Gearment, in recognition of outstanding dedication and contributions.
             </p>
 
+            <div style={{ marginTop: '20px', textAlign: 'center' }}>
+              <StaticImage
+                src="../../images/award-2025.jpg"
+                width={300}
+                quality={95}
+                formats={['AUTO', 'WEBP', 'AVIF']}
+                alt="Shining Treasure of the Year 2025 Award"
+                style={{ borderRadius: '8px' }}
+              />
+            </div>
+
             <p>Here are some technologies I’ve been working with recently:</p>
 
           </div>
