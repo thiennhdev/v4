@@ -166,7 +166,14 @@ const About = () => {
               integrity, background jobs, and event-driven integrations with external partners.
             </p>
 
+            <p>
+              🏆 I'm honored to have received the{' '}
+              <strong style={{ color: 'var(--green)' }}>Shining Treasure of the Year 2025</strong>{' '}
+              award from Gearment, in recognition of outstanding dedication and contributions.
+            </p>
+
             <p>Here are some technologies I’ve been working with recently:</p>
+
           </div>
 
           <ul className="skills-list">
