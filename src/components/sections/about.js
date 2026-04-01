@@ -207,7 +207,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/about-avatar-2025.png"
+              src="../../images/about-avatar-2025.jpg"
               width={500}
               quality={100}
               placeholder="none"
