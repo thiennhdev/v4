@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import awardImage from '../../images/award-2025.jpg';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -113,6 +114,17 @@ const StyledPic = styled.div`
   }
 `;
 
+const StyledAward = styled.div`
+  margin-top: 20px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 8px;
+  }
+`;
+
 const About = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -151,10 +163,10 @@ const About = () => {
             </p>
 
             <p>
-              Over the past few years, I’ve worked on production systems involving order management,
-              financial workflows, and high-concurrency services. My day-to-day work includes
-              designing clean APIs, implementing asynchronous processing, and ensuring system
-              stability under real-world load.
+              Over the past few years, I’ve worked on reward systems, POS-style SaaS workflows, and
+              real-time communication features. My day-to-day work includes designing clean APIs,
+              implementing asynchronous processing, and keeping backend services stable under
+              high-concurrency, real-world load.
             </p>
 
             <p>
@@ -172,19 +184,16 @@ const About = () => {
               award from Gearment, in recognition of outstanding dedication and contributions.
             </p>
 
-            <div style={{ marginTop: '20px', textAlign: 'center' }}>
-              <StaticImage
-                src="../../images/award-2025.jpg"
-                width={300}
-                quality={95}
-                formats={['AUTO', 'WEBP', 'AVIF']}
+            <StyledAward>
+              <img
+                src={awardImage}
                 alt="Shining Treasure of the Year 2025 Award"
-                style={{ borderRadius: '8px' }}
+                loading="eager"
+                decoding="async"
               />
-            </div>
+            </StyledAward>
 
             <p>Here are some technologies I’ve been working with recently:</p>
-
           </div>
 
           <ul className="skills-list">
@@ -198,11 +207,12 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpeg"
+              src="../../images/about-avatar-2025.png"
               width={500}
-              quality={95}
+              quality={100}
+              placeholder="none"
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Thien Nguyen"
             />
           </div>
         </StyledPic>
