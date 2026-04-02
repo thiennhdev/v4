@@ -206,7 +206,11 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/Nguyen_Hoang_Thien_SE.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href="/Nguyen_Hoang_Thien_Software.pdf"
+      target="_blank"
+      rel="noopener noreferrer">
       Resume
     </a>
   );
