@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Thien Nguyen',
     description:
-      'Thien Nguyen is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
+      'Thien Nguyen is a backend software engineer building reliable Go and Java services for high-concurrency, real-time, and loyalty systems.',
     siteUrl: 'https://thiennh.dev', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
