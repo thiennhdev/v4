@@ -65,18 +65,13 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer focused on building reliable backend systems and scalable real-time
-        services. I specialize in designing clean APIs, handling high-concurrency workloads, and
-        implementing complex business logic with strong data consistency.
+        I’m a backend software engineer with 3+ years of experience building production services in
+        Go and Java for high-concurrency, real-time, loyalty, CRM/ERP, and SaaS products.
       </p>
 
       <p>
-        Currently, I’m working as a Software Engineer at{' '}
-        <a href="https://gearment.com/" target="_blank" rel="noreferrer">
-          Gearment
-        </a>
-        , where I build and maintain production systems for order management, financial workflows,
-        and asynchronous data processing.
+        Currently, I’m working as a Software Engineer at VinSmart Future, where I build backend
+        services for loyalty, member rewards, and promotion workflows.
       </p>
     </>
   );

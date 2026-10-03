@@ -3,12 +3,13 @@ date: '2024-12-01'
 title: 'Software Engineer'
 company: 'Gearment'
 location: 'Ho Chi Minh City, Vietnam'
-range: 'Dec 2024 - Present'
+range: 'Dec 2024 - May 2026'
 url: 'https://gearment.com/'
 ---
 
-- Designed and implemented core backend logic for financial and order management modules, including G-Credit and tiered pricing systems, using Golang to ensure accuracy in high-value transactions.
-- Built high-performance asynchronous import/export pipelines for large-scale datasets, eliminating memory leaks and preventing timeout issues during long-running operations.
-- Implemented complex refund and cancellation workflows with strict business rule validation, maintaining strong data consistency across distributed system states.
-- Developed comprehensive logging and auditing mechanisms to improve system traceability and operational visibility in production environments.
-- Integrated external partners through webhook-driven, event-based workflows, ensuring fault-tolerant and reliable asynchronous communication.
+- Owned the full order lifecycle in Go - creation, hold, modification, cancellation, and refund - for back-office teams managing 10,000+ orders/month.
+- Engineered G-Credit and tiered-pricing workflows processing $100K+ in monthly transaction value, enforcing consistent approval, billing, and state transitions.
+- Implemented structured event logging and order-state traceability, reducing mean incident-investigation time by ~50%.
+- Built Kafka-backed partner integrations and webhook flows with retry/replay support, improving external communication reliability by ~30%.
+- Optimized asynchronous import/export pipelines for datasets exceeding 1M rows, cutting peak memory pressure by ~45% and removing timeout failures.
+- Automated recurring back-office jobs and standardized ERP module patterns, reducing manual execution and making new workflows easier to extend.

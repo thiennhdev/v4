@@ -1,16 +1,14 @@
 ---
 date: '2023-07-01'
-title: 'Fullstack Developer'
+title: 'Software Engineer'
 company: 'Esol Labs'
 location: 'Ho Chi Minh City, Vietnam'
 range: 'Jul 2023 - Dec 2024'
 url: ''
 ---
 
-- Developed a high-concurrency reward claiming system for Web3 partners, ensuring API reliability and system stability during peak livestream traffic.
-- Built scalable backend services integrating major Web3 protocols such as Lido and DWF Labs, supporting custom business logic and reward distribution workflows.
-- Designed and implemented a POS-style SaaS management system using Clean Architecture, handling complex order lifecycles, user permissions, and transactional data integrity.
-- Worked extensively with Golang and Python to build backend services capable of operating reliably under heavy load.
-- Optimized real-time communication infrastructure for chat and video call features using WebSocket and Redis, improving message delivery reliability.
-- Tuned real-time media flow logic to reduce video call latency, directly enhancing user experience during live interactions.
-- Collaborated closely with backend and frontend teams to diagnose performance bottlenecks in high-concurrency, real-time systems.
+- Built a high-concurrency reward-claiming backend in Go sustaining 5,000+ simultaneous requests during peak Web3 campaigns and live-stream events with zero data inconsistency or downtime.
+- Developed 8+ SaaS management modules across Go backend services and React interfaces, covering order flows, permissions, and transactional operations using Clean Architecture.
+- Delivered real-time chat, video, and user workflows using WebSockets and Redis pub/sub.
+- Implemented event flows for chat, presence, and session synchronization across backend instances, reducing session drop rate by ~35% and message latency by ~20%.
+- Integrated Lido and DWF Labs protocols for automated reward distribution, reducing manual reconciliation effort by ~60% through on-chain event handling.

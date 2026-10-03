@@ -138,15 +138,15 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Golang',
-    'PostgreSQL',
+    'Go',
+    'Java / Spring Boot',
+    'PostgreSQL / MongoDB',
     'Redis',
-    'WebSocket',
-    'Event-driven Systems',
-    'RabbitMQ / Kafka',
-    'Docker',
-    'TypeScript',
-    'Node.js',
+    'Kafka / RabbitMQ',
+    'gRPC / WebSocket',
+    'WebRTC',
+    'Docker / Kubernetes',
+    'React / TypeScript',
   ];
 
   return (
@@ -163,23 +163,26 @@ const About = () => {
             </p>
 
             <p>
-              Over the past few years, I’ve worked on reward systems, POS-style SaaS workflows, and
-              real-time communication features. My day-to-day work includes designing clean APIs,
-              implementing asynchronous processing, and keeping backend services stable under
-              high-concurrency, real-world load.
+              Over the past few years, I’ve built reward systems sustaining 5,000+ simultaneous
+              requests, finance workflows processing $100K+ per month, data pipelines handling 1M+
+              rows, and real-time chat, voice, and video features with WebSockets and WebRTC.
             </p>
 
             <p>
-              Currently, I’m working as a Software Engineer at{' '}
+              Currently, I’m working as a Software Engineer at VinSmart Future, where I develop Java
+              and Go backend services for loyalty, rewards, and promotions. Before that, I spent
+              time at{' '}
               <a href="https://gearment.com/" target="_blank" rel="noreferrer">
                 Gearment
               </a>
-              , where I build and maintain backend services using Golang, focusing on transactional
-              integrity, background jobs, and event-driven integrations with external partners.
+              , owning order lifecycle and finance workflows for a CRM/ERP back-office platform.
             </p>
 
             <p>
-              🏆 I'm honored to have received the{' '}
+              <span role="img" aria-label="trophy">
+                🏆
+              </span>{' '}
+              I'm honored to have received the{' '}
               <strong style={{ color: 'var(--green)' }}>Shining Treasure of the Year 2025</strong>{' '}
               award from Gearment, in recognition of outstanding dedication and contributions.
             </p>
