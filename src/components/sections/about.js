@@ -169,9 +169,12 @@ const About = () => {
             </p>
 
             <p>
-              Currently, I’m working as a Software Engineer at VinSmart Future, where I develop Java
-              and Go backend services for loyalty, rewards, and promotions. Before that, I spent
-              time at{' '}
+              Currently, I’m working as{' '}
+              <strong style={{ color: 'var(--green)' }}>
+                a Software Engineer at VinSmart Future
+              </strong>
+              , where I develop Java and Go backend services for loyalty, rewards, and promotions.
+              Before that, I spent time at{' '}
               <a href="https://gearment.com/" target="_blank" rel="noreferrer">
                 Gearment
               </a>
