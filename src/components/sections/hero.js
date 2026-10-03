@@ -70,8 +70,9 @@ const Hero = () => {
       </p>
 
       <p>
-        Currently, I’m working as a Software Engineer at VinSmart Future, where I build backend
-        services for loyalty, member rewards, and promotion workflows.
+        Currently, I’m working as{' '}
+        <strong style={{ color: 'var(--green)' }}>a Software Engineer at VinSmart Future</strong>,
+        where I build backend services for loyalty, member rewards, and promotion workflows.
       </p>
     </>
   );
