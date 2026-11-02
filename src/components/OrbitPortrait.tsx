@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import portrait from '../assets/portrait-circle.webp';
-import { claudeMark } from '../lib/brandIcons';
-import { BrandMark } from './BrandMark';
+import { ClaudeSpark } from './ClaudeSpark';
 import { PixelMascot } from './PixelMascot';
 
 /**
@@ -140,7 +139,7 @@ export function OrbitPortrait() {
           className={`electron electron-${e.kind}`}
           aria-hidden
         >
-          {e.kind === 'claude' && <BrandMark icon={claudeMark} size={20} />}
+          {e.kind === 'claude' && <ClaudeSpark size={22} />}
           {e.kind === 'mascot' && <PixelMascot />}
         </span>
       ))}
