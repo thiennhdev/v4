@@ -1,7 +1,7 @@
 import { delay } from '../lib/delay';
-import portrait from '../assets/portrait.webp';
 import { profile, socials, stats } from '../data/profile';
 import { ArrowRight, Download, Pin, SocialIcon } from './Icons';
+import { OrbitPortrait } from './OrbitPortrait';
 
 /** Renders `*text*` segments as emphasised spans. */
 function Emphasis({ text }: { text: string }) {
@@ -26,10 +26,7 @@ export function Hero() {
           </a>
 
           <p className="hero-kicker reveal" style={delay(60)}>
-            <img className="hero-avatar" src={portrait} alt="" width={44} height={44} />
-            <span>
-              {profile.shortName} — {profile.role}
-            </span>
+            {profile.shortName} — {profile.role}
           </p>
 
           <h1 className="hero-title reveal" style={delay(120)}>
@@ -63,15 +60,7 @@ export function Hero() {
         </div>
 
         <figure className="hero-portrait reveal" style={delay(160)}>
-          <div className="hero-portrait-frame">
-            <img
-              src={portrait}
-              alt={`Portrait of ${profile.shortName}`}
-              width={640}
-              height={800}
-              fetchPriority="high"
-            />
-          </div>
+          <OrbitPortrait />
           <figcaption>
             <Pin size={15} />
             {profile.location}

@@ -6,9 +6,9 @@ Built with **Vite + React 19 + TypeScript**. It's plain CSS with design tokens: 
 
 ## Features
 
-- **Hero** with current role, a short summary, impact stats and a CV download
+- **Hero** with current role, a short summary, impact stats and a CV download. The portrait is an atom's nucleus: the Claude mark, a small octopus mascot and two energy orbs orbit it, passing in front of and behind the photo
 - **Experience** as keyboard-accessible tabs, each with metric cards, bullets and the stack used
-- **Skills explorer**: skills are grouped by area and marked _core_, _strong_ or _familiar_. Pick a skill to see the jobs and projects where it was used, then jump straight to them
+- **Skills explorer**: a core-stack row with monochrome logos, then skills grouped by area with a three-bar level meter (_core_, _strong_, _familiar_). Pick a skill to see where it was used (with dates) and the skills it is often paired with, then jump straight to that job or project
 - **Projects**: two featured systems, each with an architecture flow, plus open-source repos
 - Education, certifications and an award section
 - **⌘K / Ctrl K quick-jump menu** to jump to a section, copy the email, open the résumé or switch the theme
@@ -21,6 +21,8 @@ All content lives in **[`src/data/profile.ts`](src/data/profile.ts)**: profile, 
 
 - Résumé PDF: `public/Nguyen_Hoang_Thien_Software.pdf` (path set in `profile.resume`)
 - Portrait / award photos: `src/assets/`
+- Skill logos: `src/lib/brandIcons.ts` maps a skill name to a [Simple Icons](https://simpleicons.org) mark
+- Orbit animation (orbits, speeds, electrons): `src/components/OrbitPortrait.tsx`
 - Colors & typography: tokens at the top of `src/styles/global.css`
 
 ## Development

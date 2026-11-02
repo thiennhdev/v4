@@ -1,0 +1,56 @@
+import {
+  siC,
+  siClaude,
+  siDocker,
+  siElasticsearch,
+  siGithubactions,
+  siGo,
+  siKubernetes,
+  siLinux,
+  siModelcontextprotocol,
+  siMongodb,
+  siNextdotjs,
+  siNginx,
+  siOpenjdk,
+  siPostgresql,
+  siPython,
+  siRabbitmq,
+  siReact,
+  siRedis,
+  siSocketdotio,
+  siSpringboot,
+  siApachekafka,
+  siTypescript,
+  siWebrtc,
+} from 'simple-icons';
+
+export type BrandIcon = { title: string; path: string; hex: string };
+
+/** Skill name (as written in profile.ts) → monochrome brand mark. */
+export const brandIcons: Record<string, BrandIcon> = {
+  Go: siGo,
+  Java: siOpenjdk,
+  TypeScript: siTypescript,
+  Python: siPython,
+  C: siC,
+  'Spring Boot': siSpringboot,
+  PostgreSQL: siPostgresql,
+  Redis: siRedis,
+  Kafka: siApachekafka,
+  RabbitMQ: siRabbitmq,
+  MongoDB: siMongodb,
+  Elasticsearch: siElasticsearch,
+  WebRTC: siWebrtc,
+  'Socket.IO': siSocketdotio,
+  React: siReact,
+  'Next.js': siNextdotjs,
+  Docker: siDocker,
+  Kubernetes: siKubernetes,
+  Linux: siLinux,
+  Nginx: siNginx,
+  'CI/CD': siGithubactions,
+  MCP: siModelcontextprotocol,
+  'Claude Code': siClaude,
+};
+
+export const claudeMark: BrandIcon = siClaude;

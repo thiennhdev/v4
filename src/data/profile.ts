@@ -365,11 +365,19 @@ export const certifications: { name: string; issuer?: string }[] = [
   { name: 'User Experience Research and Design' },
 ];
 
+export type SkillContext = {
+  id: string;
+  title: string;
+  kind: 'job' | 'project';
+  /** Date range for jobs, year or "Open source" for projects. */
+  meta: string;
+};
+
 /** Look up a job or project by id — used by the skills explorer. */
-export function findContext(id: string): { id: string; title: string; kind: 'job' | 'project'; anchor: string } | undefined {
+export function findContext(id: string): SkillContext | undefined {
   const job = jobs.find((j) => j.id === id);
-  if (job) return { id, title: job.company, kind: 'job', anchor: '#experience' };
+  if (job) return { id, title: job.company, kind: 'job', meta: `${job.start} — ${job.end}` };
   const project = projects.find((p) => p.id === id);
-  if (project) return { id, title: project.title, kind: 'project', anchor: `#project-${project.id}` };
+  if (project) return { id, title: project.title, kind: 'project', meta: project.year ?? project.kind };
   return undefined;
 }
