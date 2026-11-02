@@ -2,11 +2,12 @@ import { useEffect, useRef } from 'react';
 import portrait from '../assets/portrait-circle.webp';
 import { claudeMark } from '../lib/brandIcons';
 import { BrandMark } from './BrandMark';
-import { Octopus } from './Octopus';
+import { PixelMascot } from './PixelMascot';
 
 /**
- * Portrait as an atom's nucleus, with "electrons" (the Claude mark, a small
- * octopus mascot and a couple of energy orbs) travelling along tilted orbits. Each electron passes in
+ * Portrait as an atom's nucleus, with "electrons" (the Claude mark, the Claude
+ * Code pixel mascot and a couple of energy orbs) travel along tilted orbits.
+ * Each electron passes in
  * front of the portrait on the near half of its orbit and behind it on the
  * far half, which gives the scene real depth without any 3D library.
  */
@@ -18,7 +19,7 @@ type Electron = {
   period: number; // seconds per revolution
   phase: number; // starting angle, radians
   dir: 1 | -1;
-  kind: 'claude' | 'orb' | 'octopus' | 'orb-small';
+  kind: 'claude' | 'orb' | 'mascot' | 'orb-small';
 };
 
 const ORBITS: Orbit[] = [{ tilt: -24 }, { tilt: 36 }, { tilt: 96 }];
@@ -26,7 +27,7 @@ const ORBITS: Orbit[] = [{ tilt: -24 }, { tilt: 36 }, { tilt: 96 }];
 const ELECTRONS: Electron[] = [
   { orbit: 0, period: 16, phase: 0.6, dir: 1, kind: 'claude' },
   { orbit: 1, period: 11, phase: 2.4, dir: -1, kind: 'orb' },
-  { orbit: 2, period: 22, phase: 4.2, dir: 1, kind: 'octopus' },
+  { orbit: 2, period: 22, phase: 4.2, dir: 1, kind: 'mascot' },
   { orbit: 2, period: 22, phase: 1.05, dir: 1, kind: 'orb-small' },
 ];
 
@@ -71,7 +72,8 @@ export function OrbitPortrait() {
         const scale = 1 + depth * 0.14;
         el.style.transform = `translate(${half + x}px, ${half + y}px) translate(-50%, -50%) scale(${scale})`;
         el.style.zIndex = depth > 0 ? '4' : '1';
-        el.style.opacity = String(0.72 + (depth + 1) * 0.14);
+        // Small orbs fade a little with distance; the Claude mark and mascot stay solid.
+        el.style.opacity = e.kind.startsWith('orb') ? String(0.72 + (depth + 1) * 0.14) : '1';
       });
     };
 
@@ -139,7 +141,7 @@ export function OrbitPortrait() {
           aria-hidden
         >
           {e.kind === 'claude' && <BrandMark icon={claudeMark} size={20} />}
-          {e.kind === 'octopus' && <Octopus />}
+          {e.kind === 'mascot' && <PixelMascot />}
         </span>
       ))}
     </div>

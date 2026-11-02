@@ -6,7 +6,7 @@ Built with **Vite + React 19 + TypeScript**. It's plain CSS with design tokens: 
 
 ## Features
 
-- **Hero** with current role, a short summary, impact stats and a CV download. The portrait is an atom's nucleus: the Claude mark, a small octopus mascot and two energy orbs orbit it, passing in front of and behind the photo
+- **Hero** with current role, a short summary, impact stats and a CV download. The portrait is an atom's nucleus: the Claude mark, the Claude Code pixel mascot (walking and waving) and two energy orbs orbit it, passing in front of and behind the photo
 - **Experience** as keyboard-accessible tabs, each with metric cards, bullets and the stack used
 - **Skills explorer**: a core-stack row with monochrome logos, then skills grouped by area with a three-bar level meter (_core_, _strong_, _familiar_). Pick a skill to see where it was used (with dates) and the skills it is often paired with, then jump straight to that job or project
 - **Projects**: two featured systems, each with an architecture flow, plus open-source repos
