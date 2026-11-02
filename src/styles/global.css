@@ -794,8 +794,18 @@ kbd {
     0 6px 18px -4px rgba(217, 119, 87, 0.45);
 }
 
-.electron-claude svg {
-  animation: spark-spin 14s linear infinite;
+.electron-claude .spark {
+  overflow: visible;
+  animation: spark-spin 18s linear infinite;
+}
+
+.spark-ray {
+  stroke: #d97757;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  transform-box: view-box;
+  transform-origin: 12px 12px;
+  animation: spark-think 1.5s ease-in-out infinite;
 }
 
 @keyframes spark-spin {
@@ -804,38 +814,14 @@ kbd {
   }
 }
 
-.electron-orb,
-.electron-orb-small {
-  width: 14px;
-  height: 14px;
-  background: radial-gradient(circle at 34% 30%, #fff6f0 0%, #f0b79c 22%, #d97757 58%, #a9492a 100%);
-  box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.12), 0 0 14px 2px rgba(217, 119, 87, 0.35);
-}
-
-.electron-orb-small {
-  width: 9px;
-  height: 9px;
-}
-
-.electron-claude::after {
-  /* energy ripple */
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: 50%;
-  border: 1px solid rgba(217, 119, 87, 0.55);
-  animation: ripple 3.2s var(--ease) infinite;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(1);
-    opacity: 0.8;
-  }
-  70%,
+/* "Thinking": each ray shrinks toward the centre and back, one after another. */
+@keyframes spark-think {
+  0%,
   100% {
-    transform: scale(1.9);
-    opacity: 0;
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(0.5);
   }
 }
 

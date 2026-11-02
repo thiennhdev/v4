@@ -52,5 +52,3 @@ export const brandIcons: Record<string, BrandIcon> = {
   MCP: siModelcontextprotocol,
   'Claude Code': siClaude,
 };
-
-export const claudeMark: BrandIcon = siClaude;
