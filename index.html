@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thien Nguyen — Backend Software Engineer</title>
+    <meta
+      name="description"
+      content="Thien Nguyen (Nguyen Hoang Thien) is a backend software engineer in Ho Chi Minh City building reliable Go and Java services for high-concurrency, real-time and loyalty systems."
+    />
+    <meta name="author" content="Nguyen Hoang Thien" />
+    <meta name="theme-color" content="#faf9f5" />
+    <link rel="canonical" href="https://thiennh.dev/" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thiennh.dev/" />
+    <meta property="og:title" content="Thien Nguyen — Backend Software Engineer" />
+    <meta
+      property="og:description"
+      content="Reliable Go and Java backends for high-concurrency, real-time and loyalty systems."
+    />
+    <meta property="og:image" content="https://thiennh.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nguyen Hoang Thien",
+        "alternateName": "Thien Nguyen",
+        "jobTitle": "Backend Software Engineer",
+        "url": "https://thiennh.dev",
+        "email": "mailto:thiengk563@gmail.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN" },
+        "alumniOf": "FPT University",
+        "sameAs": [
+          "https://github.com/thiennhdev",
+          "https://www.linkedin.com/in/thien-nguyen-web/",
+          "https://leetcode.com/thiengk563/"
+        ]
+      }
+    </script>
+
+    <!-- Apply the saved / system theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var t;
+        try {
+          t = localStorage.getItem('theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding: 24px; font-family: system-ui">
+        Thien Nguyen — Backend Software Engineer. Email:
+        <a href="mailto:thiengk563@gmail.com">thiengk563@gmail.com</a> ·
+        <a href="/Nguyen_Hoang_Thien_Software.pdf">Résumé (PDF)</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
